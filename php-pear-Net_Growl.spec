@@ -3,17 +3,18 @@
 %define		_pearname	Net_Growl
 Summary:	%{_pearname} - Send notifications to Growl from PHP on MACOSX
 Name:		php-pear-%{_pearname}
-Version:	2.4.0
+Version:	2.5.2
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	14a297dafa22fc39caec9d861135c9b4
+# Source0-md5:	20b19d8a63824cca53d1ab8e6fbd3faa
 URL:		http://pear.php.net/package/Net_Growl/
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.571
+Requires:	php-mbstring
 Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core >= 1:1.3.3
