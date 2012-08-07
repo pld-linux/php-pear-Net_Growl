@@ -4,7 +4,7 @@
 Summary:	%{_pearname} - Send notifications to Growl from PHP on MACOSX
 Name:		php-pear-%{_pearname}
 Version:	2.5.2
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -14,11 +14,11 @@ BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.571
-Requires:	php-mbstring
-Requires:	php-pcre
+Requires:	php(mbstring)
+Requires:	php(pcre)
+Requires:	php(spl)
 Requires:	php-pear
 Requires:	php-pear-PEAR-core >= 1:1.3.3
-Requires:	php-spl
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
