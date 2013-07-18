@@ -1,19 +1,19 @@
+%define		status		stable
+%define		pearname	Net_Growl
 %include	/usr/lib/rpm/macros.php
-%define		_status		stable
-%define		_pearname	Net_Growl
-Summary:	%{_pearname} - Send notifications to Growl from PHP on MACOSX
-Name:		php-pear-%{_pearname}
-Version:	2.6.0
+Summary:	%{pearname} - Send notifications to Growl from PHP on MACOSX
+Name:		php-pear-%{pearname}
+Version:	2.7.0
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	c5826d72e85c2ccd1940e21f0d68ccf6
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	01af463327e325cef03ebe4eea3933ce
 URL:		http://pear.php.net/package/Net_Growl/
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.571
+BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php(mbstring)
 Requires:	php(pcre)
 Requires:	php(spl)
@@ -29,7 +29,7 @@ styles. Net_Growl offers the possibility to send notifications to
 Growl from your PHP application through network communication using
 UDP.
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %prep
 %pear_package_setup
@@ -51,3 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Net/Growl.php
 %{php_pear_dir}/Net/Growl
+%{php_pear_dir}/data/Net_Growl
