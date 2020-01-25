@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Net_Growl
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Send notifications to Growl from PHP on MACOSX
 Name:		php-pear-%{pearname}
 Version:	2.7.0
