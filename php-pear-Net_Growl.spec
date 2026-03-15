@@ -3,7 +3,7 @@
 Summary:	%{pearname} - Send notifications to Growl from PHP on MACOSX
 Name:		php-pear-%{pearname}
 Version:	2.7.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
